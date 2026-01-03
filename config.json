@@ -1,0 +1,37 @@
+{
+  "output_dir": "outputs",
+  "data": {
+    "data_path": "data/credit_risk.csv",
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "target_column": "target",
+    "categorical_columns": [],
+    "numerical_columns": []
+  },
+  "ctgan": {
+    "epochs": 100,
+    "batch_size": 500,
+    "latent_dim": 128,
+    "generator_lr": 0.0002,
+    "discriminator_lr": 0.0002
+  },
+  "graphsage": {
+    "epochs": 100,
+    "batch_size": 32,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "learning_rate": 0.01,
+    "graph_type": "knn",
+    "k_neighbors": 5
+  },
+  "coxph": {
+    "epochs": 100,
+    "batch_size": 32,
+    "hidden_dim": 64,
+    "learning_rate": 0.001,
+    "use_neural_network": true
+  },
+  "training": {
+    "device": "cuda"
+  }
+}
